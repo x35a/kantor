@@ -12,6 +12,7 @@ Object: {
             // Each Node has type, node types: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
 
             Document: {
+// document is a type of Node 
 // provides access to entire document like doctype, html, head, body, title, etc.
                 https://developer.mozilla.org/en-US/docs/Web/API/Document
 
@@ -20,6 +21,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the
             }
 
             Element: {
+// is a type of Node 
                 // Element provides props and methods for html, xml, svg, etc.
                  
                 HTMLElement: {
@@ -28,6 +30,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the
                     }
                 }
             }
+
+Attribute 
+Text
+Comment
+
         }
 
         Window: {
