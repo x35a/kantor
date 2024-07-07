@@ -1,15 +1,18 @@
-/* 
+/*
+DOM Inheritance
+
 Object: {
     EventTarget: {
         Node: {
             Element: {
                 HTMLElement: {
-                    HTMLInputElement: {
-                        // or any tag specific
+                    HTML{Tag}Element: {
+                        // eg: HTMLInputElement
                     }
                 }
             }
         }
     }
 }
+
 */
