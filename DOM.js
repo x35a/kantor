@@ -41,9 +41,20 @@ Object: {
                 }
             }
 
-            Attribute: {}
-            Text: {}
-            Comment: {}
+            Attribute: {
+                // Attr https://developer.mozilla.org/en-US/docs/Web/API/Attr
+            }
+
+            CharacterData: {
+                // abstract interface represents a Node object that contains characters. https://developer.mozilla.org/en-US/docs/Web/API/CharacterData
+
+                Text: {
+                    https://developer.mozilla.org/en-US/docs/Web/API/Text
+                }
+                Comment: {
+                    https://developer.mozilla.org/en-US/docs/Web/API/Comment
+                }
+            }
         }
 
         Window: {
