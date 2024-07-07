@@ -37,6 +37,7 @@ Object: {
                 HTMLElement: {
                     HTML{Tag}Element: {
                         // eg: HTMLInputElement
+                        // chain EventTarget > Node > Element > HTMLElement > HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
                     }
                 }
             }
@@ -67,7 +68,6 @@ Object: {
 }
 
 
-EventTarget, Node, Element, HTMLElement, HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 https://uk.javascript.info/dom-nodes
 https://uk.javascript.info/basic-dom-node-properties
 */
