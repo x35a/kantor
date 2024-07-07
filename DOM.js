@@ -4,6 +4,7 @@ DOM Inheritance
 From js perspective every entity is an Object Type.
 
 Object: {
+
     EventTarget: {
         // implements event methods for objects like addEventListener()
     
