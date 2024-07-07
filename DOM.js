@@ -9,8 +9,13 @@ Object: {
             // Node is abstract i can't call any Node directly eg: document.parentNode is null but Node provides some props and methods to navigate and change dom tree.
             // Each Node has own type: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
 
+            Document: {
+                https://developer.mozilla.org/en-US/docs/Web/API/Document
+                https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+            }
+
             Element: {
-                // Element is not only for html but for xml, svg, etc.
+                // Element provides props and methods for html, xml, svg, etc.
                  
                 HTMLElement: {
                     HTML{Tag}Element: {
