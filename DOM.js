@@ -43,16 +43,19 @@ Object: {
             }
 
             Attribute: {
+                // is a type of Node
                 // Attr https://developer.mozilla.org/en-US/docs/Web/API/Attr
             }
 
             CharacterData: {
-                // abstract interface represents a Node object that contains characters. https://developer.mozilla.org/en-US/docs/Web/API/CharacterData
+                // abstract represents a Node object that contains characters https://developer.mozilla.org/en-US/docs/Web/API/CharacterData
 
                 Text: {
+                    // is a type of Node
                     https://developer.mozilla.org/en-US/docs/Web/API/Text
                 }
                 Comment: {
+                    // is a type of Node
                     https://developer.mozilla.org/en-US/docs/Web/API/Comment
                 }
             }
