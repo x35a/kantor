@@ -40,3 +40,4 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the
 EventTarget, Node, Element, HTMLElement, HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 https://uk.javascript.info/basic-dom-node-properties
 */
+https://uk.javascript.info/dom-nodes
