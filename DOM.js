@@ -15,7 +15,7 @@ Object: {
     }
 }
 
-From js perspective each nesting entity is an Object type.
+From js perspective every entity is an Object type.
 
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 https://uk.javascript.info/basic-dom-node-properties
