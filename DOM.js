@@ -9,7 +9,7 @@ Object: {
     
         Node: {
             // Node is abstract i can't call any Node directly eg: document.parentNode is null but Node provides some props and methods to navigate and change dom tree.
-            // Each Node has own type: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
+            // Each Node has type, node types: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
 
             Document: {
 // provides access to entire document like doctype, html, head, body, title, etc.
