@@ -5,6 +5,8 @@ From js perspective every entity is an Object Type.
 
 Object: {
     EventTarget: {
+        // implements event methods for objects like addEventListener()
+    
         Node: {
             // Node is abstract i can't call any Node directly eg: document.parentNode is null but Node provides some props and methods to navigate and change dom tree.
             // Each Node has own type: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
@@ -24,10 +26,14 @@ Object: {
                 }
             }
         }
+
+        Window: {
+            https://developer.mozilla.org/en-US/docs/Web/API/Window
+        }
     }
 }
 
 
-inheritance chain https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+EventTarget, Node, Element, HTMLElement, HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 https://uk.javascript.info/basic-dom-node-properties
 */
