@@ -13,7 +13,7 @@ Object: {
 
             Document: {
 // document is a type of Node 
-// provides access to entire document like doctype, html, head, body, title, etc.
+// API to access each line of the document like tags, comments, bare text, whitespaces, line breaks, etc.
                 https://developer.mozilla.org/en-US/docs/Web/API/Document
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree
@@ -31,6 +31,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the
                 }
             }
 
+document type
 Attribute 
 Text
 Comment
