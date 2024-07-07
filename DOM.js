@@ -15,7 +15,8 @@ Object: {
     }
 }
 
-From ja perspective each nesting entity is an Object type.
-Look at inheritance chain https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+From js perspective each nesting entity is an Object type.
 
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+https://uk.javascript.info/basic-dom-node-properties
 */
