@@ -12,7 +12,10 @@ Object: {
             // Each Node has own type: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
 
             Document: {
+// provides access to entire document like doctype, html, head, body, title, etc.
                 https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree
                 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
             }
 
