@@ -1,5 +1,5 @@
 /*
-DOM Inheritance
+DOM interface inheritance
 
 > Each tag is js object with own props and methods.
 > Each tag object inherits dom interfaces and this creates inheritance chain like:
