@@ -1,6 +1,9 @@
 /*
 DOM Inheritance
 
+1 Each part of html file content (tags, attrs, comments, bare text, whitespaces, line breaks, etc) converts into Node object with some Node type then Nodes assembly in tree structure.
+2 Each Node is a js object ()
+
 From js perspective every entity is an Object Type.
 
 Object: {
@@ -49,7 +52,7 @@ Object: {
             }
 
             CharacterData: {
-                // abstract represents a Node object that contains characters https://developer.mozilla.org/en-US/docs/Web/API/CharacterData
+                // is abstract, it represents a Node object that contains characters https://developer.mozilla.org/en-US/docs/Web/API/CharacterData
 
                 Text: {
                     // is a type of Node
