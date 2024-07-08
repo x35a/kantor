@@ -2,8 +2,9 @@
 DOM Inheritance
 
 > Each part of html/xml/svg file content (tags, attrs, comments, bare text, whitespaces, line breaks, etc) converts into Node object then Nodes assembly into tree structure.
-> Each Node has some Node Type. 
 > For js each Node is a js object.
+> Each Node has some Node Type. Dom is a general idea about how to represent documents (not only html) thats why it has abstract classes with inheritance. 
+> Each Node has some Node Type. 
 > 
 
 
