@@ -100,3 +100,17 @@ Object: {
     }
 }
 */
+
+
+/*
+CSS
+
+CSSStyleDeclaration // interface represents list of element's css rules
+
+How to call CSSStyleDeclaration:
+
+1 element.style 
+returns list of INLINE css rules on element
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
+*/
