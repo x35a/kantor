@@ -5,12 +5,15 @@ DOM Inheritance
 > Each Node has on of the Node Type.
 
 > Each tag is js object with own props and methods.
-> Each tag object inherits other dom objects and this creates inheritance chain like:
+> Each tag object inherits dom interfaces and this creates inheritance chain like:
 > EventTarget > Node > Element > HTMLElement > HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
-> Dom objects are abstracts so we can't call them directly but they provide some prop, methods, events to navigate and manipulate any part of file content, 
-> after that "real" object like tag object inherits dom objects with their props and methods. 
-> Why dom objects? - dom is a general idea about how to represent documents (eg xml/html/svg) thats why for example Node is an abstract that is not direct equivalent to html tag.
-
+> Each item in the chain is a dom interface.
+> Technically dom interfaces are object but some are abstract it means i can't call these object directly. They provide some prop, methods, events to navigate and manipulate any part of file content.
+> Why dom interfaces? - dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model for representation first, thats why for example Node is an abstract that is not direct equivalent to html tag.
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+> When xml/html/svg file is parsing, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into objects.
+> Each object gets its dom interface eg HTMLInputElement for input or Text for text inside tag, etc.
+dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces
 
 > 
 > Text inside tag, comments, etc are also objectes, they inherit dom objects and have theie own Node Type.
@@ -18,6 +21,11 @@ DOM Inheritance
 
 
 > Document provides access to all content in xml/html/svg file. Document is a type of Node. 
+
+dom
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 
 https://uk.javascript.info/dom-nodes
 https://uk.javascript.info/basic-dom-node-properties
