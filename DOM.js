@@ -122,7 +122,10 @@ A style declaration is reset by setting it to null or an empty string, e.g., elt
 https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style
 
 
-2 
+2 window.getComputedStyle(element, pseudoElt)
+returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
+should be used to inspect the element's style — including those set by a <style> element or an external stylesheet.
+https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle 
 
 element.classList // get/add/remove classes
 https://uk.javascript.info/styles-and-classes#classname-ta-classlist
