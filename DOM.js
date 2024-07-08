@@ -105,12 +105,25 @@ Object: {
 /*
 CSS
 
-CSSStyleDeclaration // interface represents list of element's css rules
+CSSStyleDeclaration
+interface that represents a list of element's css rules
+https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
 How to call CSSStyleDeclaration:
 
-1 element.style 
-returns list of INLINE css rules on element
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+1 element.style
+returns list of INLINE css rules of the element. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
+element.style.{cssProp} = val // set css prop value
+it is recomended to set styles dynamically using this method. https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#description
+
+elem.style.display = "" // reset css prop value
+A style declaration is reset by setting it to null or an empty string, e.g., elt.style.color = null. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style
+
+
+2 
+
+element.classList // get/add/remove classes
+https://uk.javascript.info/styles-and-classes#classname-ta-classlist
 */
