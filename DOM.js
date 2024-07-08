@@ -8,9 +8,9 @@ DOM interface inheritance
 > Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.
 > Why dom interfaces? - 
 > -- dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model first to describe any part of the content in file,
-> thats why for example Node is an abstract that is not direct equivalent to html tag.
+> thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces and these interfaces inherit Node interface.
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
-> -- dom interfaces provide props, methods, events to navigate and manipulate any part of file content.
+> -- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.
 > While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
 > Each object gets its dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
 dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces extended by html dom intefaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces
@@ -28,7 +28,7 @@ https://uk.javascript.info/basic-dom-node-properties
 
 Document
 
-> For js document is api entry point to access all the content in xml/html/svg file.
+> From js perspective document is api entry point to access all the content in xml/html/svg file.
 > Document interface is a type of Node. 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document
