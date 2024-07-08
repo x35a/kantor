@@ -136,6 +136,7 @@ https://uk.javascript.info/styles-and-classes#classname-ta-classlist
 
 3 CSSStyleSheet interface
 need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet
+to manage css rules even assigned by class?
 
 Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information
 */
