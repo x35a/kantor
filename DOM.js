@@ -1,10 +1,11 @@
 /*
 DOM Inheritance
 
-1 Each part of html file content (tags, attrs, comments, bare text, whitespaces, line breaks, etc) converts into Node object with some Node type then Nodes assembly in tree structure.
-2 Each Node is a js object ()
+> Each part of html/xml/svg file content (tags, attrs, comments, bare text, whitespaces, line breaks, etc) converts into Node object then Nodes assembly into tree structure.
+> Each Node has some Node Type. 
+> For js each Node is a js object.
+> 
 
-From js perspective every entity is an Object Type.
 
 Object: {
 
