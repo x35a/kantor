@@ -112,7 +112,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 How to call CSSStyleDeclaration:
 
 1 element.style
-returns list of INLINE css rules of the element. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
 element.style.{cssProp} = val // set css prop value
 it is recomended to set styles dynamically using this method. https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#description
