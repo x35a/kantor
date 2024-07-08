@@ -3,12 +3,17 @@ DOM Inheritance
 
 > Each part of xml/html/svg file content (tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into Node entity then Nodes composing into tree structure.
 > Each Node has on of the Node Type.
-> Dom is a general idea about how to represent documents (eg xml/html/svg) thats why Node is an abstract that is not direct equivalent to html tag for example.
-> What is tag - each tag is js object with own props and methods.
+
+> Each tag is js object with own props and methods.
 > Each tag object inherits other dom objects and this creates inheritance chain like:
 > EventTarget > Node > Element > HTMLElement > HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
-> Dom objects are abstracts that provides some prop, methods, events to navigate and manipulate any part of file content.
-> Attributes, text, comments and other parts of xml/html/svg file are objects, they inherit Node object and they have some Node Type.
+> Dom objects are abstracts so we can't call them directly but they provide some prop, methods, events to navigate and manipulate any part of file content, 
+> after that "real" object like tag object inherits dom objects with their props and methods. 
+> Why dom objects? - dom is a general idea about how to represent documents (eg xml/html/svg) thats why for example Node is an abstract that is not direct equivalent to html tag.
+
+
+> 
+> Text inside tag, comments, etc are also objectes, they inherit dom objects and have theie own Node Type.
 > So DOM tree is a bunch of nested objects and each one inherits abstract dom objects.
 
 
