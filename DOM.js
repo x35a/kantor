@@ -42,7 +42,7 @@ Object: {
         // implements event methods for objects like addEventListener()
     
         Node: {
-            // Node is abstract i can't call any Node directly eg: document.parentNode is null but Node provides some props and methods to navigate and change dom tree.
+            // Node is abstract i can't call any Node directly eg: document.parentNode is null but Node provides some props and methods to navigate through dom tree.
             // Each Node has type, node types: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
             // document.nodeType // to check node type
 
@@ -54,10 +54,6 @@ Object: {
             Document: {
                 // document is a type of Node 
                 // document is API to access each line of the document like tags, comments, bare text, whitespaces, line breaks, etc.
-
-                https://developer.mozilla.org/en-US/docs/Web/API/Document
-                https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree
-                https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 
                 document.doctype // doctype (Node type: DocumentType)
                 document.documentElement // html tag
@@ -103,6 +99,4 @@ Object: {
         }
     }
 }
-
-
 */
