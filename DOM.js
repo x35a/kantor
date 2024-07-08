@@ -106,10 +106,10 @@ Object: {
 CSS
 
 CSSStyleDeclaration
-interface represents an object with css rules of some element.
+interface that shows all css rules of some element.
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
-How to call CSSStyleDeclaration:
+How to get CSSStyleDeclaration:
 
 1 element.style
 returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
