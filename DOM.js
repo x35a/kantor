@@ -2,7 +2,6 @@
 DOM Inheritance
 
 > Each part of xml/html/svg file content (tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into Node entity then Nodes composing into tree structure.
-> Each Node has on of the Node Type.
 
 > Each tag is js object with own props and methods.
 > Each tag object inherits dom interfaces and this creates inheritance chain like:
@@ -14,17 +13,12 @@ DOM Inheritance
 > thats why for example Node is an abstract that is not direct equivalent to html tag.
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 > -- dom interfaces provide props, methods, events to navigate and manipulate any part of file content.
-> While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into objects.
+> While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
 > Each object gets its dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
 dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces extended by html dom intefaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces
-> Depends on kind of interface object have it inherits some other interfaces eg text inteface inherits Node inteface thats how an object represents just text doesn't have props and methods that has input tag. 
-
-> 
-> Text inside tag, comments, etc are also objectes, they inherit dom objects and have theie own Node Type.
-> So DOM tree is a bunch of nested objects and each one inherits abstract dom objects.
-
-
-> Document provides access to all content in xml/html/svg file. Document is a type of Node. 
+> Depends on what interface object have it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
+> Node inteface has types. Each Node has it own Type. https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+> So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.
 
 dom
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
@@ -34,6 +28,14 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 https://uk.javascript.info/dom-nodes
 https://uk.javascript.info/basic-dom-node-properties
 
+
+Document
+
+> For js document is api entry point to access all the content in xml/html/svg file.
+> Document interface is a type of Node. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree
 
 Object: {
     // regular object
