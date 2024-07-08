@@ -115,13 +115,16 @@ How to call CSSStyleDeclaration:
 returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
-element.style.{cssProp} = val // set css prop value
+element.style.{cssProp} = val // set css prop inline
 it is recomended to set styles dynamically using this method. https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#description
 
 elem.style.display = "" // reset css prop value
+or elem.style.removeProperty('style property')
 A style declaration is reset by setting it to null or an empty string, e.g., elt.style.color = null. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style
 
+elem.style.cssText = "many css rules" // completely overwrite all inline styles on the element. works with elem.style only.
+https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText
 
 2 window.getComputedStyle(element, pseudoElt)
 returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
@@ -130,4 +133,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
 
 element.classList // get/add/remove classes
 https://uk.javascript.info/styles-and-classes#classname-ta-classlist
+
+3 CSSStyleSheet interface
+need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet
+
+Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information
 */
