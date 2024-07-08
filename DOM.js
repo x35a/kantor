@@ -1,8 +1,6 @@
 /*
 DOM Inheritance
 
-> Each part of xml/html/svg file content (tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into Node entity then Nodes composing into tree structure.
-
 > Each tag is js object with own props and methods.
 > Each tag object inherits dom interfaces and this creates inheritance chain like:
 > EventTarget > Node > Element > HTMLElement > HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
@@ -20,7 +18,6 @@ dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_
 > Node inteface has types. Each Node has it own Type. https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 > So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.
 
-dom
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
@@ -36,6 +33,7 @@ Document
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree
+
 
 Object: {
     // regular object
