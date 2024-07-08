@@ -106,7 +106,7 @@ Object: {
 CSS
 
 CSSStyleDeclaration
-interface that represents a list of element's css rules
+interface represents an object with css rules of some element.
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
 How to call CSSStyleDeclaration:
