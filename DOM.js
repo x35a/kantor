@@ -12,9 +12,9 @@ DOM interface inheritance
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 > -- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.
 > While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
-> Each object gets its dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
+> Each object gets its appropriate dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
 dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces extended by html dom intefaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces
-> Depends on what interface object have it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
+> Depends on what jind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
 > Node inteface has types. Each Node has it own Type. https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 > So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.
 
@@ -105,11 +105,12 @@ Object: {
 /*
 CSS
 
-CSSStyleDeclaration
+CSSStyleDeclaration:
 interface that shows all css rules of some element.
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
 How to get CSSStyleDeclaration:
+// Each option returns CSSStyleDeclaration
 
 1 element.style
 returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
@@ -131,12 +132,12 @@ returns an object containing the values of all CSS properties of an element, aft
 should be used to inspect the element's style — including those set by a <style> element or an external stylesheet.
 https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle 
 
-element.classList // get/add/remove classes
-https://uk.javascript.info/styles-and-classes#classname-ta-classlist
-
 3 CSSStyleSheet interface
 need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet
 to manage css rules even assigned by class?
 
 Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information
+
+element.classList // get/add/remove classes
+https://uk.javascript.info/styles-and-classes#classname-ta-classlist
 */
