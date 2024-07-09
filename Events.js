@@ -16,15 +16,17 @@ removeEventListener
 thera some events that can be handled using addEventListener only.
 
 
-EventTarget root dom interface provides methods: addEventListener(), removeEventListener(), dispatchEvent()
+EventTarget
+is a root dom interface that provides methods: addEventListener(), removeEventListener(), dispatchEvent()
+
+Event
+is an object that is passing into handler function when event happens. // eventHandler (event) {...}
+https://uk.javascript.info/introduction-browser-events#obyekt-podiyi
+https://developer.mozilla.org/en-US/docs/Web/API/Event
+
 
 Events have similar inheritance chain for example click:
 Event < UIEvent < MouseEvent < PointerEvent
 https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 
-Event
-this object is passing into handler function when event happens.
-https://developer.mozilla.org/en-US/docs/Web/API/Event
-
-https://uk.javascript.info/introduction-browser-events
 */
