@@ -105,11 +105,12 @@ Object: {
 CSS
 
 CSSStyleDeclaration:
-interface that shows all css rules of some element.
+It is interface that represents an object that is a CSS declaration blocks.
+From js perspective it is object with list of declaration blocks (cssProp: val) of some element.
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
 How to get CSSStyleDeclaration:
-// Each option returns CSSStyleDeclaration
+// Each option below returns CSSStyleDeclaration
 
 1 element.style
 returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
