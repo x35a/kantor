@@ -14,7 +14,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 > While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
 > Each object gets its appropriate dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
 dom interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces extended by html dom intefaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces
-> Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
+> Depend on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
 > Node inteface has types. Each Node has it own Type. https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 > So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.
 
