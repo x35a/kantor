@@ -19,15 +19,14 @@ thera some events that can be handled using addEventListener only.
 
 Event object
 
-There are many event types like click, input, keydown etc.
-There are some events groups in mdn like: 
-Device Orientation Events, Pointer Events, Server Sent Events, Touch Events, UI Events
+There are many events like click, input, keydown etc.
+There are some event groups in mdn like: Device Orientation Events, Pointer Events, Server Sent Events, Touch Events, UI Events
 Search 'events' word here https://developer.mozilla.org/en-US/docs/Web/API to found event groups.
 
-Each tag has some events like click etc. The list of events it has depend on its dom interface and what interfaces it inherits, see dom interface inheritance.
-Methods like addEventListener(), removeEventListener(), dispatchEvent() tag inherits from EventTarget which is a root dom interface. https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
+Each tag has some events like click etc. The list of events it has depend on its dom interface (eg HTMLInputElement) and what dom interfaces it inherits, see dom interface inheritance.
+Methods like addEventListener(), removeEventListener(), dispatchEvent() come from EventTarget which is a root dom interface. https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
 
-When event happens and handler runs, the handler function gets Event object as its argument. // eventHandler (event) {...}
+When event happens and eventhandler function runs, the handler function gets Event object as its argument. // eventHandler (event) {...}
 Event object passed automatically and it has props about this event like:
 event.type
 event.target // reference to the object to which the event was originally dispatched. (who has fired event)
@@ -42,5 +41,5 @@ For example this is inheritance chain for click event. It looks similar to dom i
 Event < UIEvent < MouseEvent < PointerEvent
 https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 List of Event interfaces is here https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event
-Each Event interface providev some props and methods and depends on what type of event happend it inherits some Event interfaces.
+Each Event interface provide some props and methods and depends on what type of event happend the event inherits some Event interfaces with theirs props and methods.
 */
