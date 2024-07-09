@@ -21,10 +21,11 @@ There are some events groups in mdn like:
 Device Orientation Events, Pointer Events, Server Sent Events, Touch Events, UI Events
 Search 'events' word here https://developer.mozilla.org/en-US/docs/Web/API to found event groups.
 
+Each tag has some events. The list of events it has depends on its dom interface and what interfaces it inherits, see dom interface inheritance.
+
+
 EventTarget
 is a root dom interface that provides methods: addEventListener(), removeEventListener(), dispatchEvent()
-
-
 
 Event
 is an event object that is automatically passed as argument into handler function when event happens. it has some specific info about this event. // eventHandler (event) {...}
