@@ -16,6 +16,10 @@ removeEventListener
 thera some events that can be handled using addEventListener only.
 
 
+Events have similar inheritance chain for example click:
+Event < UIEvent < MouseEvent < PointerEvent
+https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+
 Event
 this object is passing into handler function when event happens.
 https://developer.mozilla.org/en-US/docs/Web/API/Event
