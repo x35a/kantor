@@ -27,7 +27,7 @@ https://uk.javascript.info/basic-dom-node-properties
 
 
 Document
-
+// window.document // or just document cause it is part of window
 > From js perspective document is api entry point to access all the content in xml/html/svg file.
 > Document interface is a type of Node. 
 
