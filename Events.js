@@ -34,9 +34,10 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
 
 What is inside Event object?
 There are many props inside Event object that describe event but they are not always the same.
-List of props depend on type of event eg click and what events interfaces it inherits.
+List of props depend on type of event (eg click) and what event interfaces this event inherits.
 For example this is inheritance chain for click event. It looks similar to dom inheritance chain.
 Event < UIEvent < MouseEvent < PointerEvent
 https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+List of Event interfaces here https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event
 
 */
