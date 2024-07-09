@@ -38,6 +38,6 @@ List of props depend on type of event (eg click) and what event interfaces this 
 For example this is inheritance chain for click event. It looks similar to dom inheritance chain.
 Event < UIEvent < MouseEvent < PointerEvent
 https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
-List of Event interfaces here https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event
-
+List of Event interfaces is here https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event
+Each Event interface providev some props and methods and depends on what type of event happend it inherits some Event interfaces.
 */
