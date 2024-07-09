@@ -1,5 +1,6 @@
 /*
 How to add event handlers:
+https://uk.javascript.info/introduction-browser-events#vikoristannya-atributa-html
 
 1 in tag attribute 
 <p onclick="dosmth()">
@@ -15,6 +16,8 @@ removeEventListener
 ++ support many handlers on same event on same element.
 thera some events that can be handled using addEventListener only.
 
+
+Event object
 
 There are many event types like click, input, keydown etc.
 There are some events groups in mdn like: 
