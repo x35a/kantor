@@ -16,6 +16,8 @@ removeEventListener
 thera some events that can be handled using addEventListener only.
 
 
+EventTarget root dom interface provides methods: addEventListener(), removeEventListener(), dispatchEvent()
+
 Events have similar inheritance chain for example click:
 Event < UIEvent < MouseEvent < PointerEvent
 https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
