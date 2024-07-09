@@ -15,5 +15,10 @@ removeEventListener
 ++ support many handlers on same event on same element.
 thera some events that can be handled using addEventListener only.
 
+
+Event
+this object is passing into handler function when event happens.
+https://developer.mozilla.org/en-US/docs/Web/API/Event
+
 https://uk.javascript.info/introduction-browser-events
 */
