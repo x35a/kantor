@@ -46,7 +46,7 @@ Bubbling phase
 https://uk.javascript.info/bubbling-and-capturing
 
 form > div > p
-if click happens on p elements then click event happens on p element then on div then on form and up to Window - it is bubbling.
+if click happens on p elements then click event happens on p element then on div then on form and up to Window - it is bubbling. https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase#event.bubbling_phase_3
 it doen't matter if elements have event listeners or hadlers, click event fires and bubbling every time the click happens.
 to catch the click event we add eventListener and handlers to do smth on this event.
 if div and form have on click listener and some handlers then listeners fire and handlers run if click happed on p element no matter does p have on click listener on not.
