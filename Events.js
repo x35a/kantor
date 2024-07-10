@@ -58,4 +58,7 @@ eg: if click happend on p then it comes to form elem so from form handler perste
 https://uk.javascript.info/bubbling-and-capturing#event-target
 https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
+event.stopPropagation() // stops bubbling on current listener
+event.stopImmediatePropagation() // stops bubbling on all listeners
+https://uk.javascript.info/bubbling-and-capturing#pripinennya-splivannya
 */
