@@ -15,6 +15,7 @@ elem.onclick = null // remove
 removeEventListener // needs same handler function and params to get work https://uk.javascript.info/bubbling-and-capturing#zanurennya 
 ++ support many handlers on same event on same element.
 thera some events that can be handled using addEventListener only.
+about passive: true param https://uk.javascript.info/default-browser-action
 
 
 Event object
