@@ -78,4 +78,9 @@ https://uk.javascript.info/event-delegation#priklad-deleguvannya-diyi-v-rozmitci
 https://uk.javascript.info/event-delegation#shablon-povedinki
 https://uk.javascript.info/event-delegation#povedinka-peremikach
 
+
+Browser default actions
+https://uk.javascript.info/default-browser-action
+
+event.preventDefault() // prevent browaer defual arcions like form submit etc.
 */
