@@ -70,5 +70,10 @@ event.eventPhase // indicates which phase of the event flow is currently being e
 https://uk.javascript.info/bubbling-and-capturing#zanurennya
 
 Event delegation
+the idea behind is to put one listener on the root element of ui component and handle all events inside the component using one listener.
+https://uk.javascript.info/event-delegation
+
+
+
 
 */
