@@ -51,8 +51,10 @@ it doen't matter if elements have event listeners or hadlers, click event fires 
 to catch the click event we add eventListener and handlers to do smth on this event.
 if div and form have on click listener and some handlers then listeners fire and handlers run if click happed on p element no matter does p have on click listener on not.
 
-
 event.target // reference to the object to which the event was originally dispatched. (returns element who has fired event)
+this (= event.currentTarget) // it is an object of the current element who has gotten some event
+event.currentTarget may not be the same as event.target
+eg: if click happend on p then it comes to form elem so from form handler persteptive event.currentTarget is form and event.target is p. 
 https://uk.javascript.info/bubbling-and-capturing#event-target
 https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
