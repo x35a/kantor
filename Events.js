@@ -12,7 +12,7 @@ element.onclick = function () {...}
 elem.onclick = null // remove
 
 3 addEventListener
-removeEventListener
+removeEventListener // needs same handler function and params to get work https://uk.javascript.info/bubbling-and-capturing#zanurennya 
 ++ support many handlers on same event on same element.
 thera some events that can be handled using addEventListener only.
 
@@ -42,11 +42,11 @@ List of Event interfaces is here https://developer.mozilla.org/en-US/docs/Web/AP
 Each Event interface provide some props and methods and depends on what type of event happend the event inherits some Event interfaces with theirs props and methods.
 
 
-Bubbling
+Bubbling phase
 https://uk.javascript.info/bubbling-and-capturing
 
 form > div > p
-if click happens on p elements then click event happens on p element then on div then on form and up to document - it is bubbling.
+if click happens on p elements then click event happens on p element then on div then on form and up to Window - it is bubbling.
 it doen't matter if elements have event listeners or hadlers, click event fires and bubbling every time the click happens.
 to catch the click event we add eventListener and handlers to do smth on this event.
 if div and form have on click listener and some handlers then listeners fire and handlers run if click happed on p element no matter does p have on click listener on not.
@@ -58,7 +58,14 @@ eg: if click happend on p then it comes to form elem so from form handler perste
 https://uk.javascript.info/bubbling-and-capturing#event-target
 https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
-event.stopPropagation() // stops bubbling on current listener
-event.stopImmediatePropagation() // stops bubbling on all listeners
+event.stopPropagation() // stops bubbling and cupture phase on current listener
+event.stopImmediatePropagation() // stops bubbling and cupture phase on all listeners
 https://uk.javascript.info/bubbling-and-capturing#pripinennya-splivannya
+
+
+Capture phase
+Runs before Bubbling phase.
+Starts from Window to target element.
+event.eventPhase // indicates which phase of the event flow is currently being evaluated.
+https://uk.javascript.info/bubbling-and-capturing#zanurennya
 */
