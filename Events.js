@@ -76,6 +76,6 @@ https://uk.javascript.info/event-delegation
 few examples how to add event listener that will work even if remove element and then add it again.
 https://uk.javascript.info/event-delegation#priklad-deleguvannya-diyi-v-rozmitci
 https://uk.javascript.info/event-delegation#shablon-povedinki
-
+https://uk.javascript.info/event-delegation#povedinka-peremikach
 
 */
