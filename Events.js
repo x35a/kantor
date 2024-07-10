@@ -83,5 +83,6 @@ https://uk.javascript.info/event-delegation#povedinka-peremikach
 Browser default actions
 https://uk.javascript.info/default-browser-action
 
-event.preventDefault() // prevent browaer defual arcions like form submit etc.
+event.preventDefault() // prevent browser defualt actions like form submit etc.
+https://uk.javascript.info/default-browser-action#event-defaultprevented
 */
