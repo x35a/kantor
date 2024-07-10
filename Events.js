@@ -85,7 +85,6 @@ Browser default actions
 https://uk.javascript.info/default-browser-action
 
 event.preventDefault() // prevent browser defualt actions like form submit etc.
-https://uk.javascript.info/default-browser-action#event-defaultprevented
 
 
 Custom events
