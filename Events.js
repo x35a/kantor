@@ -72,9 +72,10 @@ https://uk.javascript.info/bubbling-and-capturing#zanurennya
 Event delegation
 the idea behind is to put one listener on the root element of ui component and handle all events inside the component using one listener.
 https://uk.javascript.info/event-delegation
-
-an example how to add event listener that will work even if remove element and then add it again.
+ 
+few examples how to add event listener that will work even if remove element and then add it again.
 https://uk.javascript.info/event-delegation#priklad-deleguvannya-diyi-v-rozmitci
+https://uk.javascript.info/event-delegation#shablon-povedinki
 
 
 */
