@@ -4,7 +4,7 @@ https://uk.javascript.info/introduction-browser-events#vikoristannya-atributa-ht
 
 1 in tag attribute 
 <p onclick="dosmth()">
-brawser wraps onclick code in self run function so we need to run dosmth explicitly.
+browser wraps onclick code in self run function so we need to run dosmth explicitly. https://uk.javascript.info/introduction-browser-events#poshireni-pomilki
 
 2 in element dom object prop
 element.onclick = function () {...}
