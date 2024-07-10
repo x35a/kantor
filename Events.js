@@ -88,6 +88,7 @@ event.preventDefault() // prevent browser defualt actions like form submit etc.
 
 if event is set using on<event> (in html or dom prop) then use 'return false' in handler function to stop default action.
 
+
 Custom events
 https://uk.javascript.info/dispatch-events
 
