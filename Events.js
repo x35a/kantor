@@ -66,6 +66,6 @@ https://uk.javascript.info/bubbling-and-capturing#pripinennya-splivannya
 Capture phase
 Runs before Bubbling phase.
 Starts from Window to target element.
-event.eventPhase // indicates which phase of the event flow is currently being evaluated.
+event.eventPhase // indicates which phase of the event flow is currently being evaluated. https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase#event.capturing_phase_1
 https://uk.javascript.info/bubbling-and-capturing#zanurennya
 */
