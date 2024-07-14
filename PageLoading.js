@@ -1,11 +1,13 @@
 /*
 DOMContentLoaded
 document.addEventListener("DOMContentLoaded", (event) => {});
+
 fires when:
-dom is ready 
+dom is ready // all elements can be accessed 
 
 
-imgs, styles aren't ready.
+not waiting for:
+imgs, styles
 
 blocking scripts:
 inline script
