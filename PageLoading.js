@@ -6,7 +6,11 @@ dom ready usecase - all page elements can be accessed from js if dom is ready.
 
 DOMContentLoaded doesn't wait for: imgs, styles, async scripts.
 
+steps before dom ready event:
 blocking scripts // inline scripts and src scripts are loaded and executed
+defer and module scripts are loaded and executed
+defer scripts are waiting for styles loaded
+
 styles before blocking scripts // loaded and executed https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
 styles before
 scripts defer // loaded and executed https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
