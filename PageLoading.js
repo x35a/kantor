@@ -1,17 +1,25 @@
 /*
-DOMContentLoaded
+DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", (event) => {});
+fires when dom is ready. 
+why it is useful - all page elements can be accessed from js if dom is ready.
+it doesn't wait for: imgs, styles, async scripts.
 
-fires when:
+blocking scripts // inline scripts and src scripts are loaded and executed
+styles before blocking scripts // loaded and executed https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
+styles before
+scripts defer // loaded and executed https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+scripts module // loaded and executed
 dom is ready // all elements can be accessed 
 
+DOMContentLoaded does not wait for stylesheets to load, however deferred scripts do wait for stylesheets, and the DOMContentLoaded event is queued after deferred scripts. 
+Also, scripts which aren't deferred or async (e.g. <script>) will wait for already-parsed stylesheets to load.
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
-not waiting for:
-imgs, styles
 
 blocking scripts:
-inline script
-script src
+inline scripts
+src scripts
 
 none blocking:
 script defer
