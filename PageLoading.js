@@ -2,8 +2,9 @@
 DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", (event) => {});
 fires when dom is ready. 
-why it is useful - all page elements can be accessed from js if dom is ready.
-it doesn't wait for: imgs, styles, async scripts.
+dom ready usecase - all page elements can be accessed from js if dom is ready.
+
+DOMContentLoaded doesn't wait for: imgs, styles, async scripts.
 
 blocking scripts // inline scripts and src scripts are loaded and executed
 styles before blocking scripts // loaded and executed https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
