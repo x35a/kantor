@@ -1,4 +1,25 @@
 /*
+DOMContentLoaded
+document.addEventListener("DOMContentLoaded", (event) => {});
+fires when:
+dom is ready 
+
+
+imgs, styles aren't ready.
+
+blocking scripts:
+inline script
+script src
+
+none blocking:
+script defer
+script async
+inserted scripts // document.createElement('script')
+
+
+https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
 document.readyState
 values:
 loading // dom is not ready 
