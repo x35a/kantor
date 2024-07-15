@@ -12,7 +12,7 @@ steps before DOMContentLoaded event:
 > if there are styles before inline or src scripts then DOMContentLoaded must wait for styles loaded. // https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
 > defer and module scripts are loaded and executed
 > defer scripts are waiting for styles loaded, so DOMContentLoaded must wait for styles if there is defer script in the document. // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
-
+// gemini says defer script could be executed after DOMContentLoaded - test needed.
 
 DOMContentLoaded does not wait for stylesheets to load, however deferred scripts do wait for stylesheets, and the DOMContentLoaded event is queued after deferred scripts. 
 Also, scripts which aren't deferred or async (e.g. <script>) will wait for already-parsed stylesheets to load.
