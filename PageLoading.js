@@ -27,6 +27,7 @@ none blocking:
 script defer
 script async
 inserted scripts // document.createElement('script')
+// https://uk.javascript.info/script-async-defer#dinamichni-skripti
 
 
 https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded
