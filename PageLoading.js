@@ -32,6 +32,15 @@ inserted scripts // document.createElement('script')
 https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
+
+load event
+fired when the whole page has loaded, including all dependent resources such as stylesheets, scripts, iframes, and images.
+
+window.addEventListener("load", (event) => {console.log("page is fully loaded")});
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+
+
 document.readyState
 values:
 loading // dom is not ready 
