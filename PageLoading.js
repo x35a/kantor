@@ -44,8 +44,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 document.readyState
 values:
 loading // dom is not ready 
-interactive // dom is ready but scripts, styles, images are not 
-complete // everything is loaded 
+interactive // dom is ready but scripts, styles, images are not. equal to DOMContentLoaded event.
+complete // everything is loaded. equal to load event.
 
 document.readyState can check document state at any time.
 
