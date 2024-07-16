@@ -50,7 +50,7 @@ https://uk.javascript.info/onload-ondomcontentloaded#window-onload
 
 btw, load event also fires on most element ls that have src like img, script, style, etc.
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event
-https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
+https://uk.javascript.info/onload-onerror#inshi-resursi
 
 
 # document.readyState
