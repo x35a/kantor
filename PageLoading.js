@@ -1,5 +1,5 @@
 /*
-DOMContentLoaded event
+# DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", (event) => {});
 
 fires when dom is ready. 
@@ -22,7 +22,7 @@ Also, scripts which aren't deferred or async (e.g. <script>) will wait for alrea
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 
-Scripts in the document 
+# Scripts in the document 
 
 blocking scripts:
 inline scripts
@@ -36,7 +36,7 @@ inserted scripts // document.createElement('script')
 // https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
 
 
-load event
+# load event
 fired when the whole page has loaded, including all dependent resources such as stylesheets, scripts, iframes, and images.
 
 window.addEventListener("load", (event) => {console.log("page is fully loaded")});
@@ -46,9 +46,10 @@ https://uk.javascript.info/onload-ondomcontentloaded#window-onload
 
 btw, load event also fires on most element ls that have src like img, script, style, etc.
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event
+https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
 
 
-document.readyState
+# document.readyState
 values:
 loading // dom is not ready 
 interactive // dom is ready but scripts, styles, images are not. equal to DOMContentLoaded event.
