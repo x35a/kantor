@@ -47,8 +47,7 @@ can be loaded as async script using async attribute.
 https://uk.javascript.info/modules-intro#atribut-async-pracyuye-u-vbudovanikh-skriptakh
 
 import(module)
-
-
+allows conditional import. works in any script type.
 https://uk.javascript.info/modules-dynamic-imports#viraz-import
 
 
