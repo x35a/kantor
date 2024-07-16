@@ -35,9 +35,16 @@ src scripts
 none blocking:
 script defer
 script async
+
 inserted scripts // document.createElement('script')
 https://uk.javascript.info/script-async-defer#dinamichni-skripti
 https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
+
+script module
+loads as defer script by default.
+https://uk.javascript.info/modules-intro#moduli-ye-vidkladenimi-deferred
+can be loaded as async script using async attribute.
+https://uk.javascript.info/modules-intro#atribut-async-pracyuye-u-vbudovanikh-skriptakh
 
 
 # load event
