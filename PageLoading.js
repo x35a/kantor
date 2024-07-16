@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {});
 
 fires when dom is ready. 
-dom ready usecase - all page elements can be accessed from js if dom is ready.
+usecase - all page elements can be accessed from js if dom is ready.
 
 DOMContentLoaded doesn't wait for: imgs, styles, async scripts.
 
@@ -11,10 +11,13 @@ https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 steps before DOMContentLoaded event:
-> inline scripts and src scripts are loaded and executed // https://uk.javascript.info/script-async-defer
-> if there are styles before inline or src scripts then DOMContentLoaded must wait for styles loaded. // https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
-> defer and module scripts are loaded and executed
-> defer scripts are waiting for styles loaded, so DOMContentLoaded must wait for styles if there is defer script in the document. // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+> inline scripts and src scripts are loaded and executed.
+https://uk.javascript.info/script-async-defer
+> if there are styles before inline or src scripts then DOMContentLoaded must wait for styles loaded.
+https://uk.javascript.info/onload-ondomcontentloaded#domcontentloaded-ta-stili
+> defer and module scripts are loaded and executed.
+> defer scripts are waiting for styles loaded, so DOMContentLoaded must wait for styles if there is defer script in the document.
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 // gemini says defer script could be executed after DOMContentLoaded - test needed.
 
 DOMContentLoaded does not wait for stylesheets to load, however deferred scripts do wait for stylesheets, and the DOMContentLoaded event is queued after deferred scripts. 
@@ -22,7 +25,8 @@ Also, scripts which aren't deferred or async (e.g. <script>) will wait for alrea
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 
-# Scripts in the document 
+# Scripts in the document
+do: test styles + scripts on diff positions in the document.
 
 blocking scripts:
 inline scripts
@@ -32,8 +36,8 @@ none blocking:
 script defer
 script async
 inserted scripts // document.createElement('script')
-// https://uk.javascript.info/script-async-defer#dinamichni-skripti
-// https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
+https://uk.javascript.info/script-async-defer#dinamichni-skripti
+https://uk.javascript.info/onload-onerror#zavantazhennya-skripta
 
 
 # load event
@@ -64,6 +68,5 @@ document.addEventListener('readystatechange', (event) => {console.log(document.r
 fires each time when document changes it state.
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document/readystatechange_event
-
 https://uk.javascript.info/onload-ondomcontentloaded#readystate
 */
