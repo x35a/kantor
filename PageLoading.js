@@ -22,6 +22,8 @@ Also, scripts which aren't deferred or async (e.g. <script>) will wait for alrea
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 
+Scripts in the document 
+
 blocking scripts:
 inline scripts
 src scripts
@@ -40,6 +42,10 @@ fired when the whole page has loaded, including all dependent resources such as 
 window.addEventListener("load", (event) => {console.log("page is fully loaded")});
 
 https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+https://uk.javascript.info/onload-ondomcontentloaded#window-onload
+
+btw, load event also fires on most element ls that have src like img, script, style, etc.
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event
 
 
 document.readyState
