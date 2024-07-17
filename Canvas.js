@@ -1,5 +1,5 @@
 /*
-Canvas tag is a HTMLCanvasElement dom interface with some unique methods and events.
+Canvas tag is a HTMLCanvasElement dom interface with some methods and events dedicated to canvas element.
 
 Before drawing i must select one of the drawing context.
 
@@ -14,7 +14,6 @@ getContex() method allows to select the context // canvasElement.getContext('2d'
 
 HTMLCanvasElement
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement
-
 getContext()
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext#contexttype
 
@@ -24,12 +23,12 @@ Relies on cpu mostly during rendering.
 Usecase: simple 2d graphics and animations.
 
 CanvasRenderingContext2D
-https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#reference
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
 Canvas tutorial
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial
 
 webgl
-allows 2d and 3d drawing, it uses gpu and opengl. browser translates js code into opengl instructions.
+allows 2d and 3d drawing. it leverages gpu and opengl api. browser translates js code to opengl instructions. btw it may be directx or metal api.
 webgl is represented by WebGLRenderingContext interface.
 
 webgl2
