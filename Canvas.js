@@ -42,4 +42,11 @@ represented by GPUCanvasContext interface.
 WebGPU API
 https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
 
+
+OffscreenCanvas
+it is performance optimization, the idea behind is to run rendering process inside web worker, so the rendering runs in a separate thread.
+
+OffscreenCanvas
+https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas
+
 */
