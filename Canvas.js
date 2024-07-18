@@ -50,7 +50,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas
 
 Canvas libs
 it is better to use some canvas lib rather then pure 2d, webgl or webgpu api.
-p5js, konva // nice doc
+p5, konva // nice doc
 three, babylon, playcanvas // for 3d 
-https://npmtrends.com/easeljs-vs-fabric-vs-konva-vs-p5js-vs-paper-vs-phaser-vs-pixi.js-vs-twojs-ts
+https://npmtrends.com/easeljs-vs-konva-vs-p5js-vs-phaser-vs-pixi.js-vs-twojs-ts
 */
