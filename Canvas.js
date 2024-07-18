@@ -44,8 +44,13 @@ https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
 
 OffscreenCanvas
 it is performance optimization, the idea behind is to run rendering process inside web worker, so the rendering runs in a separate thread.
-
 OffscreenCanvas
 https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas
 
+
+Canvas libs
+it is better to use some canvas lib rather then pure 2d, webgl or webgpu api.
+p5js, konva // nice doc
+three // powerful but may be tough for learning 
+https://npmtrends.com/easeljs-vs-fabric-vs-konva-vs-p5js-vs-paper-vs-phaser-vs-pixi.js-vs-twojs-ts
 */
