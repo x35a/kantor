@@ -1,7 +1,7 @@
 
 # DOM interface inheritance
 
-Each tag is js object with own props and methods.
+Each tag is js object with own props and methods. 
 Each tag object inherits dom interfaces and this creates inheritance chain like:
 EventTarget > Node > Element > HTMLElement > HTMLInputElement 
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement 
