@@ -4,7 +4,7 @@
 Each tag is js object with own props and methods.
 Each tag object inherits dom interfaces and this creates inheritance chain like:
 EventTarget > Node > Element > HTMLElement > HTMLInputElement 
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement 
 Each item in the chain is a dom interface.
 Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.
 
