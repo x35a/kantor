@@ -4,14 +4,14 @@
 Each tag is js object with own props and methods.  
 Each tag object inherits dom interfaces and this creates inheritance chain like:  
 EventTarget > Node > Element > HTMLElement > HTMLInputElement  
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement  
+HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement     
 Each item in the chain is a dom interface.  
 Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.
 
-Why dom interfaces? - 
--- dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model first to describe any part of the content in file,
-thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces and these interfaces inherit Node interface.
-https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+Why dom interfaces? 
+-- dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model first to describe any part of the content in file.  
+thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces and these interfaces inherit Node interface.  
+HTML DOM API https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API  
 -- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.
 
 While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
