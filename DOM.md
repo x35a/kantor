@@ -134,7 +134,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText
 
 2 window.getComputedStyle(element, pseudoElt)  
 returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.  
-should be used to inspect the element's style — including those set by a <style> element or an external stylesheet.  
+should be used to inspect the element's style — including those set by a \<style> element or an external stylesheet.  
 https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle  
 
 3 CSSStyleSheet interface  
