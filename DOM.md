@@ -21,7 +21,7 @@ DOM interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_
 HTML DOM API interfaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces  
 Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.  
 Node inteface has types. Each Node has it own Type.  
-Node types https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType  
+> Node types https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType  
 So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.  
 
 Document Object Model https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model  
