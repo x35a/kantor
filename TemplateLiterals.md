@@ -1,5 +1,4 @@
 ## Multi-line strings
-`console.log`
 ```
 console.log(`string text line 1
 string text line 2`);
