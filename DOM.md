@@ -9,7 +9,7 @@ Technically dom interfaces are objects with some props and methods but some of t
 
 Why dom interfaces?  
 -- dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model first to describe any part of the content in file.  
-thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces and these interfaces inherit Node interface. [HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)  
+thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces ([html dom api](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)) and these interfaces inherit Node interface.   
 -- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.  
 
 While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.  
@@ -18,13 +18,14 @@ Each object gets its appropriate dom interface eg HTMLInputElement for input or 
 Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.  
 Node inteface has types. Each Node has it own Type.  
 [Node types](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)  
+
 So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.  
 
 [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)  
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)  
 [The HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)  
 [Dom nodes kantor](https://uk.javascript.info/dom-nodes)  
-[Basic Node properties](https://uk.javascript.info/basic-dom-node-properties)  
+[Basic Node properties kantor](https://uk.javascript.info/basic-dom-node-properties)  
 
 
 Document  
@@ -36,6 +37,7 @@ From js perspective document is api entry point to access all the content in xml
 Document interface is a type of Node.  
 [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)  
 [Using the Document](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree)  
+
 
 ```
 Object: {
@@ -105,44 +107,41 @@ Object: {
 ```
 
 
+# CSS
 
-/*
-CSS
+CSSStyleDeclaration:  
+It is interface that represents an object that is a CSS declaration blocks.  
+From js perspective it is object with list of declaration blocks (cssProp: val) of some element.  
+https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration  
 
-CSSStyleDeclaration:
-It is interface that represents an object that is a CSS declaration blocks.
-From js perspective it is object with list of declaration blocks (cssProp: val) of some element.
-https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
+How to get CSSStyleDeclaration:  
+// Each option below returns CSSStyleDeclaration  
 
-How to get CSSStyleDeclaration:
-// Each option below returns CSSStyleDeclaration
+1 element.style  
+returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.  
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style  
 
-1 element.style
-returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+element.style.{cssProp} = val // set css prop inline  
+it is recomended to set styles dynamically using this method. https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#description  
 
-element.style.{cssProp} = val // set css prop inline
-it is recomended to set styles dynamically using this method. https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#description
+elem.style.display = "" // reset css prop value  
+or elem.style.removeProperty('style property')  
+A style declaration is reset by setting it to null or an empty string, e.g., elt.style.color = null. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style  
+https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style  
 
-elem.style.display = "" // reset css prop value
-or elem.style.removeProperty('style property')
-A style declaration is reset by setting it to null or an empty string, e.g., elt.style.color = null. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
-https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style
+elem.style.cssText = "many css rules" // completely overwrite all inline styles on the element. works with elem.style only.  
+https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText  
 
-elem.style.cssText = "many css rules" // completely overwrite all inline styles on the element. works with elem.style only.
-https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText
+2 window.getComputedStyle(element, pseudoElt)  
+returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.  
+should be used to inspect the element's style — including those set by a <style> element or an external stylesheet.  
+https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle  
 
-2 window.getComputedStyle(element, pseudoElt)
-returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
-should be used to inspect the element's style — including those set by a <style> element or an external stylesheet.
-https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle 
+3 CSSStyleSheet interface  
+need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet  
+to manage css rules even assigned by class?  
 
-3 CSSStyleSheet interface
-need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet
-to manage css rules even assigned by class?
+Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information  
 
-Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information
-
-element.classList // get/add/remove classes
-https://uk.javascript.info/styles-and-classes#classname-ta-classlist
-*/
+element.classList // get/add/remove classes  
+https://uk.javascript.info/styles-and-classes#classname-ta-classlist  
