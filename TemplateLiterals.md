@@ -7,7 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
 
 ## String interpolation
 ```
-console.log(\`text ${a + b}\`)
+console.log(`text ${a + b}`)
 ```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#string_interpolation
 
@@ -21,4 +21,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
 
 ## Tagged templates
 a function that can parse and change template.
+```
+parseFunc`That ${person} is a ${age}.`
+```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates
