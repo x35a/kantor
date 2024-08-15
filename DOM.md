@@ -4,7 +4,8 @@
 Each tag is js object with own props and methods.  
 Each tag object inherits dom interfaces and this creates inheritance chain like:  
 EventTarget > Node > Element > HTMLElement > HTMLInputElement  
-HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement  
+> HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement  
+
 Each item in the chain is a dom interface.  
 Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.  
 
@@ -21,7 +22,7 @@ DOM interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_
 HTML DOM API interfaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces  
 Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.  
 Node inteface has types. Each Node has it own Type.  
-> Node types https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType  
+Node types https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType  
 So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.  
 
 Document Object Model https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model  
