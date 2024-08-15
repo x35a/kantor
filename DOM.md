@@ -4,35 +4,34 @@
 Each tag is js object with own props and methods.  
 Each tag object inherits dom interfaces and this creates inheritance chain like:  
 EventTarget > Node > Element > HTMLElement > HTMLInputElement  
-HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement     
+HTMLInputElement https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement  
 Each item in the chain is a dom interface.  
-Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.
+Technically dom interfaces are objects with some props and methods but some of them are abstract it means i can't call object directly if it is abstract.  
 
-Why dom interfaces? 
+Why dom interfaces?  
 -- dom is a general idea about how to represent documents (eg xml/html/svg) so they had to create some abstract general model first to describe any part of the content in file.  
 thats why for example Node is an abstract that is not direct equivalent to html tag. whereas tags have theire own interfaces and these interfaces inherit Node interface.  
 HTML DOM API https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API  
--- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.
+-- dom interfaces (eg Node or Document) provide props, methods, events to navigate and manipulate any part of file content.  
 
-While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.
-Each object gets its appropriate dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.
-dom interfaces extended by html dom intefaces.
-https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces // dom interfaces
-https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces // html dom intefaces
-Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.
-Node inteface has types. Each Node has it own Type.
-https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType // node types
-So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.
+While parsing xml/html/svg file, each part of the file content (like: tags, attrs, text inside tag, comments, whitespaces, line breaks, etc) converts into object.  
+Each object gets its appropriate dom interface eg HTMLInputElement for input or Text interface for text inside tag, etc.  
+dom interfaces extended by html dom intefaces.  
+DOM interfaces https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces  
+HTML DOM API interfaces https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces  
+Depends on what kind of interface object has, it inherits some other interfaces, eg Text interface inherits Node inteface, thats how an object that represents just a text doesn't have props and methods that input tag has.  
+Node inteface has types. Each Node has it own Type.  
+Node types https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType  
+So DOM tree is a bunch of nested objects. Each object has its interface and inherits some other dom interfaces.  
 
-Document Object Model https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
-https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+Document Object Model https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model  
+Introduction to the DOM https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction  
+The HTML DOM API https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API  
+Dom nodes https://uk.javascript.info/dom-nodes  
+Basic Node properties https://uk.javascript.info/basic-dom-node-properties
 
-https://uk.javascript.info/dom-nodes
-https://uk.javascript.info/basic-dom-node-properties
 
-
-Document
+Document  
 window.document // or just document cause it is part of window
 From js perspective document is api entry point to access all the content in xml/html/svg file and it is also object with props and methods btw.
 Document interface is a type of Node. 
