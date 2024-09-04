@@ -40,6 +40,8 @@ is the successor to webgl, has better compatibility with modern gpu, supports mo
 represented by GPUCanvasContext interface.
 WebGPU API
 https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
+WebGPU Unleashed: A Practical Tutorial (may be outdated)
+https://shi-yan.github.io/webgpuunleashed/
 
 
 OffscreenCanvas
