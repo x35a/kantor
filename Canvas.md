@@ -1,12 +1,12 @@
 /*
-Canvas tag is a HTMLCanvasElement dom interface with some methods and events dedicated to canvas element.
+Canvas tag is a HTMLCanvasElement dom interface with some methods and events dedicated to canvas element.  
 
-Before drawing i must select one of the drawing context.
+Before drawing i must select one of the drawing context.  
 
-Drawing context is a way how browser draws something.
+Drawing context is a way how browser draws something.  
 
-There are several drawing contexts:
-2d, webgl, webgl2, webgpu
+There are several drawing contexts:  
+2d, webgl, webgl2, webgpu  
 
 Each context has its own api with bunch of props, methods, events dedicated for drawing.
 
