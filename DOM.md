@@ -1,4 +1,3 @@
-
 # DOM interface inheritance
 
 Each tag is js object with own props and methods.  
