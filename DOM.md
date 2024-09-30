@@ -1,5 +1,4 @@
 # DOM interface inheritance
-
 Each tag is js object with own props and methods.  
 Each tag object inherits dom interfaces and this creates inheritance chain like:  
 EventTarget > Node > Element > HTMLElement > [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)  
@@ -27,7 +26,7 @@ So DOM tree is a bunch of nested objects. Each object has its interface and inhe
 [Basic Node properties kantor](https://uk.javascript.info/basic-dom-node-properties)  
 
 
-Document  
+# Document  
 `window.document` // or just document cause it is part of window  
 `document.documentElement` // html tag  
 `document.head` // head tag  
@@ -106,17 +105,15 @@ Object: {
 ```
 
 
-# CSS
-
-CSSStyleDeclaration:  
+# CSSStyleDeclaration
 It is interface that represents an object that is a CSS declaration blocks.  
 From js perspective it is object with list of declaration blocks (cssProp: val) of some element.  
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration  
 
-How to get CSSStyleDeclaration:  
-// Each option below returns CSSStyleDeclaration  
+## How to get CSSStyleDeclaration:  
+Each option below returns CSSStyleDeclaration  
 
-1 element.style  
+### 1 element.style  
 returns list of INLINE css rules of the element. if element doesn't have inline styles it returns css rules with empty values.  
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style  
 
@@ -131,12 +128,12 @@ https://uk.javascript.info/styles-and-classes#skidannya-vlastivosti-v-elem-style
 elem.style.cssText = "many css rules" // completely overwrite all inline styles on the element. works with elem.style only.  
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText  
 
-2 window.getComputedStyle(element, pseudoElt)  
+### 2 window.getComputedStyle(element, pseudoElt)  
 returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.  
 should be used to inspect the element's style — including those set by a \<style> element or an external stylesheet.  
 https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle  
 
-3 CSSStyleSheet interface  
+### 3 CSSStyleSheet interface  
 need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet  
 to manage css rules even assigned by class?  
 
@@ -144,3 +141,42 @@ Using dynamic styling https://developer.mozilla.org/en-US/docs/Web/API/CSS_Objec
 
 element.classList // get/add/remove classes  
 https://uk.javascript.info/styles-and-classes#classname-ta-classlist  
+
+
+Quick look at cssom interfaces inheritance:  
+todo: add code examples to the nested object below  
+todo: how to get styles from \<style> elememt?  
+```
+StyleSheet {
+    represents a single style sheet
+    https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet
+
+    CSSStyleSheet {
+        A stylesheet consists of a collection of CSSRule objects representing each of the rules in the stylesheet. The rules are contained in a CSSRuleList, which can be obtained from the stylesheet's cssRules property.
+        https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet        
+        
+        CSSRuleList {
+            an ordered collection of read-only CSSRule objects
+            https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList
+
+            CSSRule {
+                interface represents a single CSS rule
+                each rule has own type
+                props and methods depend on rule type
+                https://developer.mozilla.org/en-US/docs/Web/API/CSSRule
+
+                CSSStyleRule {
+                    is a one of the css rule type
+                    The CSSStyleRule interface represents a single CSS style rule.
+                    https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule
+
+                    CSSStyleRule.style // Returns the CSSStyleDeclaration object for the rule.
+                    CSSStyleRule.styleMap // Returns a StylePropertyMap object which provides access to the rule's property-value pairs.
+                }
+
+            }
+        }
+
+    }
+}
+```

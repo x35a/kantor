@@ -1,2 +1,1 @@
-\<picture> test  
-https://codesandbox.io/p/sandbox/picture-lz3sf
+[line 137 need research https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet](https://github.com/x35a/kantor/blob/95b83c5f576e2a5098928c78bb4f5e865a853948/DOM.md#L137)
