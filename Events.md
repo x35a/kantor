@@ -1,4 +1,4 @@
-How to add event handler:  
+# How to add event handler  
 https://uk.javascript.info/introduction-browser-events#vikoristannya-atributa-html
 
 1 in tag attribute  
@@ -17,7 +17,7 @@ removeEventListener // needs same handler function and params to get work https:
 thera some events that can be handled using addEventListener only.  
 
 
-Event object
+# Event object
 
 There are many events like click, input, keydown etc.  
 There are some event groups in mdn like: Device Orientation Events, Pointer Events, Server Sent Events, Touch Events, UI Events  
@@ -42,7 +42,7 @@ List of Event interfaces is here https://developer.mozilla.org/en-US/docs/Web/AP
 Each Event interface provide some props and methods and depends on what type of event happend the event inherits some Event interfaces with theirs props and methods.
 
 
-Bubbling phase  
+# Bubbling phase  
 https://uk.javascript.info/bubbling-and-capturing
 
 form > div > p  
@@ -51,6 +51,7 @@ it doen't matter if elements have event listeners or hadlers, click event fires 
 to catch the click event we add eventListener and handlers to do smth on this event.  
 if div and form have on click listener and some handlers then listeners fire and handlers run if click happed on p element no matter does p have on click listener on not.
 
+# event.target
 event.target // reference to the object to which the event was originally dispatched. (returns element who has fired event)  
 this (= event.currentTarget) // it is an object of the current element who has gotten some event  
 event.currentTarget may not be the same as event.target  
@@ -63,14 +64,14 @@ event.stopImmediatePropagation() // stops bubbling and cupture phase on all list
 https://uk.javascript.info/bubbling-and-capturing#pripinennya-splivannya  
 
 
-Capture phase  
+# Capture phase  
 Runs before Bubbling phase.  
 Starts from Window to target element.  
 event.eventPhase // indicates which phase of the event flow is currently being evaluated. https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase#event.capturing_phase_1  
 https://uk.javascript.info/bubbling-and-capturing#zanurennya  
 
 
-Event delegation  
+# Event delegation  
 the idea behind is to put one listener on the root element of ui component and handle all events inside the component using one listener.  
 https://uk.javascript.info/event-delegation  
  
@@ -80,7 +81,7 @@ https://uk.javascript.info/event-delegation#shablon-povedinki
 https://uk.javascript.info/event-delegation#povedinka-peremikach  
 
 
-Browser default actions  
+# Browser default actions  
 https://uk.javascript.info/default-browser-action // repeat it  
 
 event.preventDefault() // prevent browser defualt actions like form submit etc.
@@ -94,7 +95,7 @@ https://uk.javascript.info/default-browser-action#event-defaultprevented
 https://developer.mozilla.org/en-US/docs/Web/API/Event/defaultPrevented  
 
 
-Custom events  
+# Custom events  
 https://uk.javascript.info/dispatch-events // repeat it
 
 let event = new Event(type, options) // create custom event https://developer.mozilla.org/en-US/docs/Web/API/Event/Event
