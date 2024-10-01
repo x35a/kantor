@@ -180,3 +180,7 @@ StyleSheet {
     }
 }
 ```
+
+need test  
+document.adoptedStyleSheets
+// to add programmatically created stylesheet to the document 
