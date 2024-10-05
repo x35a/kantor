@@ -1,3 +1,6 @@
+additional links for research  
+https://quire.io/w/IT_WEB32/858?view=tree
+
 # DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", (event) => { });  
 
